@@ -56,12 +56,15 @@ body{
 .campoagregar{
     font-family: 'Chiller';
     font-size: 2.7vw;
-    color: #000000;    
+    color: white;    
     background: transparent;
-    border: none;    
+    border: none;
+    filter:blur(1px)    
 }
 .campoagregar::placeholder { 
-    color: #201f1f;    
+    color: white;
+    filter:blur(1.2px)
+
 }
 .botones{
     flex-basis: 40%;

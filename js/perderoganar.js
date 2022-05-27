@@ -16,6 +16,7 @@ function nuevoJuego(){
     document.querySelector(".cuerpo").style.visibility = "hidden";
     document.querySelector(".piernaizq").style.visibility = "hidden";
     document.querySelector(".piernader").style.visibility = "hidden";
+    mostrar.textContent=""; 
     juegardenuevo();    
 }
 /* Función que oculta todos los elementos del ahorcado y llama a la función 

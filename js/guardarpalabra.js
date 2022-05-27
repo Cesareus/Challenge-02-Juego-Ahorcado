@@ -7,7 +7,7 @@ guardarpalabra.addEventListener("click", function(event){
     if(validarstring(cadena)){
             if(cadena.length <= 1){
             alert("La palabra debe tener al menos 2 letras");
-            }else if(cadena.length < 8){
+            }else if(cadena.length <= 8){
                 guardado(cadena);
                 document.querySelector("#botonagregar").style.visibility = "visible";
                 document.querySelector("#botoniniciar").style.visibility = "visible";  
