@@ -1,0 +1,196 @@
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    flex-basis: 0;
+    flex-grow: 9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;    
+    align-content: stretch;
+    border: none;
+    background-image: url('../imagenes/Fondo.jpeg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;    
+    animation: rayo 10s linear infinite both;   
+    margin:0%;
+    padding: 0%;
+    animation-delay: 5s;
+    overflow:hidden;    
+}
+.box{
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: nowrap;
+    justify-content: flex-start; 
+    align-items: stretch;   
+    flex-basis: 0;
+    flex-grow: 1;  
+    margin:0%; 
+    background: transparent;
+}
+.logoAlura{
+    position: relative;
+    left: 20%;
+    top: 5%;
+    flex-basis: 20%;      
+    background:none;    
+}
+.logoAlura img{
+    filter:blur(1.2px)
+}
+.campotexto{
+    flex-basis: 20%;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    visibility: hidden;
+    width: auto;
+    align-self: center; 
+    background:none;    
+}
+.campoagregar{
+    font-family: 'Chiller';
+    font-size: 2.7vw;
+    color: #000000;    
+    background: transparent;
+    border: none;    
+}
+.campoagregar::placeholder { 
+    color: #201f1f;    
+}
+.botones{
+    flex-basis: 40%;
+    position: relative;
+    left: 10%;
+}
+.boton{
+   min-width: 14vw;
+   padding: 5%;
+   background:transparent;
+   color: white;
+   border: none;
+   font-family: 'Chiller';
+   font-size: 3.5vw;
+   filter: blur(1.1px);
+}
+.boton:hover{
+cursor: pointer;
+transform: scale(1.2);
+filter: blur(0px);;
+}
+#botonagregar{
+    visibility: visible;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+}
+#botoniniciar{
+    visibility: visible;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+}
+#guardarpalabra{
+    visibility: hidden;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+}
+#cancelar{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+}
+#nuevojuego{
+    visibility: hidden;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+}
+#desistir{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+}
+.box1{ 
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-basis: 0;
+    flex-grow: 3;       
+}
+.cajainterna1{
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    align-items: stretch;
+    background: transparent;    
+    z-index: 1;
+}
+.lunaytexto{
+   flex-basis: 0;
+   flex-grow: 1;   
+   background: transparent;
+
+}
+.luna{
+    width: 8vw;
+    height: 8vw;   
+    margin:0% auto;
+    padding: 0%;
+    background-image:url(../imagenes/luna.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;    
+    padding: 0%;  
+    border:none;
+    border-radius: 50%; 
+    filter: blur(1.5px);      
+}
+.cajaarbolyM{
+    flex-basis: 0;
+    flex-grow: 2;
+    position: relative;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:flex-end;
+    align-items: center;  
+}
+
+@keyframes rayo {
+    0% {
+        filter: brightness(1);
+    }
+    2% {
+        filter: brightness(3);
+        cue: url("../Thunder.wav");
+    }
+    5% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1);       
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+
+
+
+
+
+

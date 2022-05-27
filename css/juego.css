@@ -1,0 +1,88 @@
+.cajatexto{
+    visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 90%;    
+}
+.juego{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cajapalabra{
+    width: 100%;
+    height: 45%;
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+    flex-direction: column;
+}
+#textousuario{
+    position: absolute;
+    width: 90%;
+    height: 10%;    
+    top:3%;
+    left: 3%;    
+    opacity: 0;
+    background: white;
+    border: 1px solid black;
+}
+.palabraactual{
+    position: absolute;
+    top: 10%;
+    width: 90%;
+    font-family: "Work Sans";
+    display: flex;
+    flex-direction: row;    
+    height: 2.6vw;
+    justify-content: center;
+    align-items: center;       
+    padding: 0%;
+    margin: 0 auto;
+}
+.guionbajo{
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    width: 90%;
+    font-size: 1.4vw;
+    padding-left: 0%;
+    margin :0 0.5vw;    
+}
+.sectionError p{
+    color: white;
+    padding: 0 5px;
+    margin: 0;
+}
+.cajavidas{
+    font-family: "Work Sans";
+    color: white;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;    
+    height: 10vh;
+}
+.vidas{
+    font-size: 2rem;
+}
+#textogrande{
+    position: absolute;
+    text-align: center;
+    z-index: 700;
+    top: 37%;
+    left:37%;
+    width: auto;
+    height: auto;
+    font-family: 'Chiller';
+    color: red;
+    font-size: 8vw;
+}
+

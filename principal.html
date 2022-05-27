@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+    <html lang="es">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">            
+            <title>Juego</title>
+            <link rel="stylesheet"  href="css/reset.css">
+            <link rel="stylesheet" text="text/css" href="css/principal.css">
+            <link rel="stylesheet" text="text/css" href="css/juego.css">
+            <link rel="stylesheet" text="text/css" href="css/horca.css">
+            <link rel="stylesheet" text="text/css" href="css/comun.css">              
+        </head>
+
+        <body>
+            <span id="textogrande" style="visibility: hidden;">VER</span>          
+            <div class="container">
+                <div class="box">
+                    <div class="logoAlura">
+                        <img src="imagenes/Logoblanco.png" alt="logo-ahorcado"></img>
+                    </div>
+                    <div class="campotexto">
+                        <input type="text" name="campo" class="campoagregar" placeholder="Ingrese una palabra">
+                    </div>
+                    <div class="botones">
+                        <button class="boton" id="botonagregar" onmousedown="botones.play()">Agregar Palabra</button>
+                        <button class="boton" id="botoniniciar" onmousedown="botones.play()">Iniciar Juego</button>
+                        <button class="boton" id="guardarpalabra" onmousedown="botones.play()">Guardar</button>
+                        <button class="boton" id="cancelar" onmousedown="botones.play()">Cancelar</button>
+                        <button class="boton" id="nuevojuego" onmousedown="botones.play()">Nuevo Juego</button>
+                        <button class="boton" id="desistir" onmousedown="botones.play()">Desistir</button>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="cajainterna1">
+                        <div class="cajaarbolyM">                            
+                            <div class="arbolymunieco">                                   
+                                <svg  class="maderalateral" height="100%" width="18%">
+                                    <rect width="40%" height="90%" rx="2%" ry="2%" style="fill: black; stroke: black"/>
+                                </svg>
+                                <svg class="soporteizq" height="24%" width="21%">
+                                    <line x1="100%" y1="22%" x2="35%" y2="100%" style="stroke:#000; stroke-width:5vh" />
+                                </svg>
+                                <svg class="soporteder" height="24%" width="24%">
+                                    <line x1="27%" y1="0%" x2="80%" y2="80%" style="stroke:#000; stroke-width:5vh" />
+                                </svg>      
+                                <svg class="madcruzada" height="40%" width="54%">
+                                    <line x1="100%" y1="0%" x2="33%" y2="90%" style="stroke:#000; stroke-width:5vh" />
+                                </svg>   
+                                <svg  class="maderaarriba" height="20%" width="80%">
+                                    <rect width="90%" height="30%" rx="5%" ry="8%" style="fill: black; stroke: black"/>
+                                </svg>      
+                                    <div class="muniecoysoga">                                                
+                                        <svg class="cajasoga"height="15%" width="20%">
+                                            <line x1="50%" y1="0%" x2="50%" y2="100%" style="stroke:#000; stroke-width:1.6vh" />
+                                        </svg>                                                            
+                                        <svg class="cabeza" height="20%" width="70%">
+                                            <circle cx="50%" cy="50%" r="35%" style="fill: black; stroke: black" />
+                                        </svg> 
+                                        <svg  class="brazoizq" height="30%" width="18%">
+                                            <rect width="86%" height="95%" rx="40%" ry="10%" style="fill: black; stroke: black"/>
+                                        </svg>         
+                                        <svg  class="cuerpo"height="30%" width="50%">
+                                            <rect width="86%" height="95%" rx="20%" ry="10%" style="fill: black; stroke: black"/>
+                                        </svg>
+                                        <svg  class="brazoder" height="30%" width="18%">
+                                            <rect width="86%" height="95%" rx="40%" ry="10%" style="fill: black; stroke: black"/>
+                                        </svg>                            
+                                        <svg  class="piernaizq" height="30%" width="18%">
+                                            <rect width="92%" height="95%" rx="40%" ry="10%" style="fill: black; stroke: black"/>
+                                        </svg>   
+                                        <svg  class="piernader" height="30%" width="18%">
+                                            <rect width="92%" height="95%" rx="40%" ry="10%" style="fill: black; stroke: black"/>
+                                        </svg>              
+                                    </div> 
+                            </div>
+                        </div>                        
+                        <div class="lunaytexto">
+                            <div class="luna"></div>
+                            <div class="cajatexto">
+                                <section class="juego">
+                                    <section class="cajapalabra" id="tablero">
+                                        <form>
+                                            <input type="text" id="textousuario" autofocus pattern="[A-Z]">
+                                        </form>
+                                    </section>
+                                    <section class="sectionError">
+                                    </section>
+                                    <section class="cajavidas">
+                                        <span class="vidas"></span>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>                        
+                    </div> 
+                </div>                          
+            </div>    
+       
+            <div class="container1">
+                <div class="datos">
+                    <h1>Developed By César Rosa</h1>
+                    <button class="linkedin">in</button>            
+                </div>
+            </div>       
+        </body>
+        <script src="js/principal.js"></script> 
+        <script src="js/guardarpalabra.js"></script>
+        <script src="js/palabras.js"></script>
+        <script src="js/perderoganar.js"></script> 
+        <script src="js/juego.js"></script>                      
+    </html>

@@ -1,0 +1,90 @@
+.container{
+    flex-basis: 0;
+    flex-grow: 9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: none;  
+    justify-content: center; 
+    align-items: flex-end;   
+    margin:0%;
+    padding: 0%;
+    background-image: url('../imagenes/Fondo3.jpeg');    
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;    
+    animation: rayo 10s linear infinite both;
+    animation-delay: 5s;
+    overflow:hidden;      
+}
+.logoAlura{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    flex-basis: 20%;      
+    background:none;
+    filter:blur(1.2px)
+}
+.cuervo{ 
+    position: absolute;
+    left: 105vw;;
+    top: 8vh;
+    width: 100vw;
+    height: auto;  
+}
+.cuervo img{
+    max-width: 7%;
+    max-height: 7%; 
+    filter: brightness(0.6);
+    filter:blur(2px);
+    object-fit: contain;
+    animation-name: ir;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;  
+}
+
+.boton-index{    
+    background: none;
+    border: none;
+    color: white;
+    font-family:'Chiller';
+    font-size: 4vw;
+    filter: blur(1.2px);
+    margin-bottom: 5vh;
+}
+.boton-index:hover{
+cursor: pointer;
+transform: scale(1.2);
+filter: blur(0px);;
+}
+
+
+
+@keyframes ir{
+    0%{
+        transform: translateX(0vw)  translateY(0);      
+    }
+
+    100% {
+        transform: translateX(-140vw) translateY(25vh); 
+    } 
+}
+
+@keyframes rayo {
+    0% {
+        filter: brightness(1);
+    }
+    2% {
+        filter: brightness(3);
+        cue: url("../Thunder.wav");
+    }
+    5% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1);       
+    }
+    100% {
+        filter: brightness(1);
+    }
+}

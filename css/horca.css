@@ -1,0 +1,111 @@
+.arbolymunieco{
+    visibility: visible;
+    width: 100%;
+    height:100%;
+    background: transparent;   
+    position: relative;
+    filter: blur(2px); 
+}
+.soporteizq{
+    visibility: hidden;
+    position: absolute;
+    top:70%;
+    left:2%;     
+    background: none;
+    margin: 0%;  
+}
+.soporteder{
+    visibility: hidden;
+    position: absolute;
+    top:75%;
+    left:16%;     
+    background: none;
+    margin: 0%; 
+}
+.maderalateral{
+    visibility: hidden;
+    position: absolute;
+    top:0%;
+    left:19%;     
+    background: none;
+    margin: 0%;  
+}
+.madcruzada{
+    visibility: hidden;
+    position: absolute;
+    top:0%;
+    left:5%;     
+    background: none;
+    margin: 0%;  
+}
+.maderaarriba{
+    visibility: hidden;
+    position: absolute;
+    top:0%;
+    left:19%;     
+    background: none;
+    margin: 0%;  
+}
+.muniecoysoga{
+    visibility: visible;
+    position: absolute;
+    width: 13vw;
+    height:70vh;
+    top:6%;
+    left:65%;     
+    background: transparent;
+    margin: 0%;
+
+}
+.cajasoga{
+    visibility: hidden;
+    position: absolute;
+    top:0%;
+    left:41.3%;     
+    background: none;
+    margin: 0%;  
+}
+.cabeza{
+    visibility: hidden;
+    position: absolute;
+    top:7%;
+    left:17%;    
+    background: none;      
+}
+
+.brazoizq{
+    visibility: hidden;
+    position: absolute;
+    top:26%;
+    left:18%;
+    background: none;
+}
+.cuerpo{ 
+    visibility: hidden;
+    position: absolute;
+    top:24%;
+    left:30%;
+    background: none;    
+    margin: 0%;
+}
+.brazoder{   
+    visibility: hidden; 
+    position: absolute;
+    top:26%;
+    left:69%;
+    background: none; 
+}
+.piernaizq{
+    visibility: hidden;
+    position: absolute;
+    top:48%;
+    left:34%;
+    background: none;
+}
+.piernader{
+    visibility: hidden;
+    position: absolute;   
+    top:48%;
+    left:53%;
+    background: none;
+}
