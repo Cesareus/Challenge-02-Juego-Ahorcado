@@ -20,7 +20,8 @@ function nuevapalabra(){
 }
 /*Elije Aleatoriamente una palabra (string) del array palabras guardado en palabras.js
  y devuelve un array de letras*/
-function juegardenuevo(){    
+function juegardenuevo(){
+    textousuario.focus();    
     let arrayletras = nuevapalabra();    
     palabradividida(arrayletras);
     let labelantiguo= document.querySelector("label");
