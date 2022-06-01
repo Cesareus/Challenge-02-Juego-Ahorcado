@@ -1,6 +1,9 @@
     
+window.onload = traerDatos();
 let iniciarJuego = document.querySelector("#botoniniciar");
 let nuevojuego = document.querySelector("#nuevojuego");
+let palabras=[];
+
 iniciarJuego.addEventListener("click",function(){
     document.querySelector("#botonagregar").style.visibility = "hidden";
     document.querySelector("#botoniniciar").style.visibility = "hidden"; 
@@ -13,14 +16,21 @@ nuevojuego.addEventListener("click",nuevoJuego);
 let tablero = document.getElementById("tablero");
 let textousuario = document.getElementById("textousuario");
              
-function nuevapalabra(){
+function nuevapalabra(){    
+    if(obtener_localstorage() != false){  
+    palabras = obtener_localstorage();
+    }else{
+        palabras = arraypalabras;
+    }
+    
+    console.log(palabras);
     let palabra = palabras[Math.floor(Math.random()*palabras.length)];    
     let arrayletras = Array.from(palabra);
     return arrayletras;
 }
 /*Elije Aleatoriamente una palabra (string) del array palabras guardado en palabras.js
  y devuelve un array de letras*/
-function juegardenuevo(){
+function juegardenuevo(){    
     textousuario.focus();    
     let arrayletras = nuevapalabra();    
     palabradividida(arrayletras);

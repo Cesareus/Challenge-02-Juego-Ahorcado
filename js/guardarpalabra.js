@@ -1,5 +1,6 @@
 let guardarpalabra= document.querySelector("#guardarpalabra");
 let cadena = document.querySelector(".campoagregar").value;
+
 guardarpalabra.addEventListener("click", function(event){    
     event.preventDefault()
     var cadena = document.querySelector(".campoagregar").value;
@@ -34,7 +35,24 @@ function validarstring(cadena){
 
 /******************guardando**************** */
 function guardado(cadena){ 
-        palabras.push(cadena.toUpperCase());
+        arraypalabras.push(cadena.toUpperCase());
         alert("Guardado");        
         document.querySelector(".campoagregar").value="";
+        guardar_localstorage();
+}
+
+function guardar_localstorage(){
+
+    localStorage.setItem("conjunto_palabras",arraypalabras);
+}
+
+function obtener_localstorage(){
+
+    let encadenado = localStorage.getItem("conjunto_palabras");
+    if(encadenado == null){
+        return false;
+    }else{
+    palabras_storage = encadenado.split(",");
+    return palabras_storage;
+    }
 }
