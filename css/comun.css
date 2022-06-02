@@ -44,3 +44,22 @@ body{
 transform: scale(1.1);
 border-color: #c78c19;    
 }
+
+@media screen and (max-width:480px){
+
+    .datos h1{     
+        font-family:'Courier New', Courier, monospace;
+        font-size:  4.5vw;
+        margin-top: 2vw;
+        margin-right: 0.5vw;      
+        color: rgb(194, 191, 191);      
+    }
+    .linkedin{   
+        background: none;
+        color: rgb(194, 191, 191);
+        font-size: 5vw;
+        margin-left: 0.5vw;
+        border: 0.2vw solid white;        
+    }
+
+}

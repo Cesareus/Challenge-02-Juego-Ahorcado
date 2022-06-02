@@ -22,8 +22,7 @@ function nuevapalabra(){
     }else{
         palabras = arraypalabras;
     }
-    
-    console.log(palabras);
+   
     let palabra = palabras[Math.floor(Math.random()*palabras.length)];    
     let arrayletras = Array.from(palabra);
     return arrayletras;
@@ -96,6 +95,7 @@ function mostrarletras(arrayletras,errores){
                 errores.push(escribiendo);                    
                 let letraerror = document.createElement("p");
                 letraerror.textContent = escribiendo;
+                letraerror.classList.add("error");
                 sectionError.appendChild(letraerror);               
             }
         }

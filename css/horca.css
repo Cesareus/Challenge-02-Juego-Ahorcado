@@ -109,3 +109,16 @@
     left:53%;
     background: none;
 }
+@media screen and (max-width:480px){
+    .arbolymunieco{
+        position: relative;
+        top:5%;
+        left: 25% ;
+        visibility: visible;
+        width: 50vw;
+        height: 20vh;
+        background: transparent;       
+        filter: blur(2px); 
+    }
+
+}
