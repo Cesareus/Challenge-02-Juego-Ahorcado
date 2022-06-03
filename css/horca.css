@@ -1,124 +1,32 @@
-.arbolymunieco{
+.horcaymunieco{
+    position: relative;
+    top: 0%;
+    left:0%;
     visibility: visible;
     width: 100%;
     height:100%;
-    background: transparent;   
-    position: relative;
+    background: transparent;
     filter: blur(2px); 
 }
-.soporteizq{
-    visibility: hidden;
+.horca{
     position: absolute;
-    top:70%;
-    left:2%;     
-    background: none;
-    margin: 0%;  
-}
-.soporteder{
-    visibility: hidden;
-    position: absolute;
-    top:70%;
-    left:23%;     
-    background: none;
-    margin: 0%; 
-}
-.maderalateral{
-    visibility: hidden;
-    position: absolute;
-    top:0%;
-    left:19%;     
-    background: none;
-    margin: 0%;  
-}
-.madcruzada{
-    visibility: hidden;
-    position: absolute;
-    top:0%;
-    left:5%;     
-    background: none;
-    margin: 0%;  
-}
-.maderaarriba{
-    visibility: hidden;
-    position: absolute;
-    top:0%;
-    left:19%;     
-    background: none;
-    margin: 0%;  
-}
-.muniecoysoga{
-    visibility: visible;
-    position: absolute;
-    width: 13vw;
-    height:70vh;
-    top:6%;
-    left:65%;     
+    top: 0%;
+    left:0%;
+    width: 90%;
+    height:100%;
     background: transparent;
-    margin: 0%;
-
-}
-.cajasoga{
-    visibility: hidden;
-    position: absolute;
-    top:0%;
-    left:41.3%;     
-    background: none;
-    margin: 0%;  
-}
-.cabeza{
-    visibility: hidden;
-    position: absolute;
-    top:7%;
-    left:17%;    
-    background: none;      
+    filter: blur(2px);     
 }
 
-.brazoizq{
-    visibility: hidden;
-    position: absolute;
-    top:26%;
-    left:18%;
-    background: none;
-}
-.cuerpo{ 
-    visibility: hidden;
-    position: absolute;
-    top:24%;
-    left:30%;
-    background: none;    
-    margin: 0%;
-}
-.brazoder{   
-    visibility: hidden; 
-    position: absolute;
-    top:26%;
-    left:69%;
-    background: none; 
-}
-.piernaizq{
-    visibility: hidden;
-    position: absolute;
-    top:48%;
-    left:34%;
-    background: none;
-}
-.piernader{
-    visibility: hidden;
-    position: absolute;   
-    top:48%;
-    left:53%;
-    background: none;
-}
 @media screen and (max-width:480px){
-    .arbolymunieco{
-        position: relative;
-        top:5%;
-        left: 25% ;
+    .horcaymunieco{
+        position: unset;        
         visibility: visible;
-        width: 50vw;
-        height: 20vh;
+        width: 70%;
+        height: 100%;
         background: transparent;       
-        filter: blur(2px); 
+        filter: blur(2px);
+        margin: 0 auto; 
     }
 
 }

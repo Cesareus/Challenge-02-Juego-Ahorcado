@@ -161,8 +161,7 @@ filter: blur(0px);;
 }
 .cajaarbolyM{
     flex-basis: 0;
-    flex-grow: 2;
-    position: relative;
+    flex-grow: 2;    
     background: transparent;
 }
 

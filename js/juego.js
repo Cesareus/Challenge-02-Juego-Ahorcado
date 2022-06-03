@@ -9,7 +9,7 @@ iniciarJuego.addEventListener("click",function(){
     document.querySelector("#botoniniciar").style.visibility = "hidden"; 
     document.querySelector("#nuevojuego").style.visibility = "visible";
     document.querySelector("#desistir").style.visibility = "visible";
-    document.querySelector(".cajatexto").style.visibility = "visible";
+    document.querySelector(".cajatexto").style.visibility = "visible";    
     juegardenuevo(); 
 });
 nuevojuego.addEventListener("click",nuevoJuego);

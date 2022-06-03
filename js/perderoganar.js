@@ -3,19 +3,8 @@ let winorlose = document.getElementById("textogrande");
 
 
 
-function nuevoJuego(){
-    document.querySelector(".maderalateral").style.visibility = "hidden";
-    document.querySelector(".soporteizq").style.visibility = "hidden";
-    document.querySelector(".soporteder").style.visibility = "hidden";
-    document.querySelector(".madcruzada").style.visibility = "hidden";
-    document.querySelector(".maderaarriba").style.visibility = "hidden";
-    document.querySelector(".cajasoga").style.visibility = "hidden";
-    document.querySelector(".cabeza").style.visibility = "hidden";
-    document.querySelector(".brazoizq").style.visibility = "hidden";
-    document.querySelector(".brazoder").style.visibility = "hidden";
-    document.querySelector(".cuerpo").style.visibility = "hidden";
-    document.querySelector(".piernaizq").style.visibility = "hidden";
-    document.querySelector(".piernader").style.visibility = "hidden";
+function nuevoJuego(){    
+    document.querySelector(".horca").style.visibility = "hidden";
     mostrar.textContent=""; 
     juegardenuevo();    
 }
@@ -26,45 +15,44 @@ function perderoganar(errores){
     let lifes = 10-errores.length;
     switch(lifes){
         case 9:{
-            document.querySelector(".maderalateral").style.visibility = "visible";
-            document.querySelector(".soporteizq").style.visibility = "visible";
-            document.querySelector(".soporteder").style.visibility = "visible";
+            document.querySelector(".horca").style.visibility = "visible";
+            document.querySelector(".horca").src = "../imagenes/horca/1.png";
             break;
         }
         case 8:{
-            document.querySelector(".madcruzada").style.visibility = "visible";
+            document.querySelector(".horca").src = "../imagenes/horca/2.png";
             break;
         }
         case 7:{
-            document.querySelector(".maderaarriba").style.visibility = "visible";
+            document.querySelector(".horca").src = "../imagenes/horca/3.png";
             break;
         }
         case 6:{
-            document.querySelector(".cajasoga").style.visibility = "visible";
+            document.querySelector(".horca").src = "../imagenes/horca/4.png";
             break;
         }
         case 5:{
-            document.querySelector(".cabeza").style.visibility = "visible";
+            document.querySelector(".horca").src = "../imagenes/horca/5.png";
             break;
         }
         case 4:{
-            document.querySelector(".brazoizq").style.visibility = "visible";
+            document.querySelector(".horca").src = "../imagenes/horca/6.png";
             break;
         }
         case 3:{
-            document.querySelector(".brazoder").style.visibility = "visible";
+            document.querySelector(".horca").src = "../imagenes/horca/7.png";
             break;
         }
         case 2:{
-            document.querySelector(".cuerpo").style.visibility = "visible";
+            document.querySelector(".horca").src = "../imagenes/horca/8.png";
             break;
         }
         case 1:{
-            document.querySelector(".piernaizq").style.visibility = "visible";
+            document.querySelector(".horca").src = "../imagenes/horca/9.png";
             break;
         }
         case 0:{
-            document.querySelector(".piernader").style.visibility = "visible";
+            document.querySelector(".horca").src = "../imagenes/horca/10.gif";
             break;
         }
         default:{                     
