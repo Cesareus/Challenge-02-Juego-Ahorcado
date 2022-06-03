@@ -34,8 +34,7 @@
 }
 .cuervo img{
     max-width: 7%;
-    max-height: 7%; 
-    filter: brightness(0.6);
+    max-height: 7%;    
     filter:blur(2px);
     object-fit: contain;
     animation-name: ir;
@@ -86,5 +85,12 @@ filter: blur(0px);;
     }
     100% {
         filter: brightness(1);
+    }
+}
+
+@media screen and (max-width:480px){
+    .boton-index{       
+        font-size: 8vw;
+        filter: blur(0.2px);       
     }
 }
