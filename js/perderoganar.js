@@ -16,11 +16,11 @@ function perderoganar(errores){
     switch(lifes){
         case 9:{
             document.querySelector(".horca").style.visibility = "visible";
-            document.querySelector(".horca").src = "horca/1.png";
+            document.querySelector(".horca").src = "/horca/1.png";
             break;
         }
         case 8:{
-            document.querySelector(".horca").src = "horca/2.png";
+            document.querySelector(".horca").src = "/horca/2.png";
             break;
         }
         case 7:{
