@@ -16,43 +16,43 @@ function perderoganar(errores){
     switch(lifes){
         case 9:{
             document.querySelector(".horca").style.visibility = "visible";
-            document.querySelector(".horca").src = "/horca/1.png";
+            document.querySelector(".horca").src = "horca/1.png";
             break;
         }
         case 8:{
-            document.querySelector(".horca").src = "/horca/2.png";
+            document.querySelector(".horca").src = "horca/2.png";
             break;
         }
         case 7:{
-            document.querySelector(".horca").src = "/horca/3.png";
+            document.querySelector(".horca").src = "horca/3.png";
             break;
         }
         case 6:{
-            document.querySelector(".horca").src = "/horca/4.png";
+            document.querySelector(".horca").src = "horca/4.png";
             break;
         }
         case 5:{
-            document.querySelector(".horca").src = "/horca/5.png";
+            document.querySelector(".horca").src = "horca/5.png";
             break;
         }
         case 4:{
-            document.querySelector(".horca").src = "/horca/6.png";
+            document.querySelector(".horca").src = "horca/6.png";
             break;
         }
         case 3:{
-            document.querySelector(".horca").src = "/horca/7.png";
+            document.querySelector(".horca").src = "horca/7.png";
             break;
         }
         case 2:{
-            document.querySelector(".horca").src = "/horca/8.png";
+            document.querySelector(".horca").src = "horca/8.png";
             break;
         }
         case 1:{
-            document.querySelector(".horca").src = "/horca/9.png";
+            document.querySelector(".horca").src = "horca/9.png";
             break;
         }
         case 0:{
-            document.querySelector(".horca").src = "/horca/10.gif";
+            document.querySelector(".horca").src = "horca/10.gif";
             break;
         }
         default:{                     
